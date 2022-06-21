@@ -14,7 +14,26 @@ header {
     color: #373737;
 }
 
+/* grid */
 
+
+
+.grid-container {
+    height: 500px;
+    background: #FFFFFF;
+    display: grid;
+    width: 500px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.grid-container>div {
+    border-radius: 0.5px;
+}
+.grid-element,#slider,.buttons {
+    user-select: none;
+}
 .container {
     display: flex;
     align-items: center;
@@ -33,28 +52,12 @@ header {
     gap: 20px;
 }
 
-.grid-container {
-    height: 500px;
-    background: #FFFFFF;
-    display: grid;
-    width: 500px;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.grid-container>div {
-    border-radius: 0.5px;
-}
-.grid-element,#slider,.buttons {
-    user-select: none;
-}
-  
-
+/* slider */
 #slider {
     width: 150px;
 }
 
+/* colorpicker */
 #colorPicker {
     border: none;
     height: 70px;
@@ -62,6 +65,8 @@ header {
     background-color: #e8e8e8;
 }
 
+
+/* buttons */
 button,
 input {
     width: 80%;
