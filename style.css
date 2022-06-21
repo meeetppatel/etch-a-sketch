@@ -46,7 +46,7 @@ header {
 .grid-container>div {
     border-radius: 0.5px;
 }
-.grid-element {
+.grid-element,#slider,.buttons {
     user-select: none;
 }
   
