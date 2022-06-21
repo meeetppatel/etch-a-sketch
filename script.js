@@ -41,7 +41,6 @@ function gridgenerator(size) {
     const gridElement = document.createElement('div')
     gridElement.classList.add('grid-element')
     gridElement.addEventListener('mouseover', changeColor)
-    gridElement.addEventListener('mousedown', changeColor)
     grid.appendChild(gridElement)
   }
 }
@@ -64,12 +63,8 @@ clear.addEventListener("click", ()=> {
   gridgenerator(currentSize);
 })
 
-let mouseDown = false
-document.body.onmousedown = () => (mouseDown = true)
-document.body.onmouseup = () => (mouseDown = false)
 
 function changeColor(e) {
-  if (e.type === 'mouseover' && !mouseDown) return
   if(currentMode == "color"){
     e.target.style.background = currentColor;
   }
